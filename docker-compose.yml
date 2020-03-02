@@ -2,6 +2,7 @@ version: '3.3'
 
 services: 
     mongo:
+        container_name: mongoDB
         image: 'mongo'
         volumes:
             - ./data:/data/db
@@ -9,3 +10,5 @@ services:
             - .env
         ports: 
             - '27017:27017'
+volumes: 
+    data:
