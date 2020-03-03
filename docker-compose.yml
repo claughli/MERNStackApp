@@ -1,6 +1,16 @@
 version: '3.3'
 
-services: 
+services:
+    app:
+        container_name: nodeApp
+        build: .
+        image: node-app
+        volumes:
+            - .:/user/src/app
+        ports: 
+            - '3000:3000'
+        depends_on: 
+            - mongo
     mongo:
         container_name: mongoDB
         image: 'mongo'
