@@ -1,0 +1,25 @@
+{
+  "name": "meanstackapp",
+  "version": "1.0.0",
+  "description": "MEAN stack app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claughli/MEANStackApp.git"
+  },
+  "author": "Casey Laughlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claughli/MEANStackApp/issues"
+  },
+  "homepage": "https://github.com/claughli/MEANStackApp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.3",
+    "nodemon": "^2.0.2"
+  }
+}
