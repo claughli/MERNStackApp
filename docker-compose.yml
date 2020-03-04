@@ -11,6 +11,8 @@ services:
             - '3000:3000'
         depends_on: 
             - mongo
+        links: 
+            - mongo
     mongo:
         container_name: mongoDB
         image: 'mongo'
