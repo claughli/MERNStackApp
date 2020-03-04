@@ -6,7 +6,7 @@ services:
         build: .
         image: node-app
         volumes:
-            - .:/user/src/app
+            - .:/usr/src/app
         ports: 
             - '3000:3000'
         depends_on: 
